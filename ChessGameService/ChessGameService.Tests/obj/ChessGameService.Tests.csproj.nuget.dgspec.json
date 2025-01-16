@@ -1,0 +1,168 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService.Tests/ChessGameService.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService.Tests/ChessGameService.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService.Tests/ChessGameService.Tests.csproj",
+        "projectName": "ChessGameService.Tests",
+        "projectPath": "/Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService.Tests/ChessGameService.Tests.csproj",
+        "packagesPath": "/Users/joakimengqvist/.nuget/packages/",
+        "outputPath": "/Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/Users/joakimengqvist/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService/ChessGameService.csproj": {
+                "projectPath": "/Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService/ChessGameService.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "JetBrains.Annotations": {
+              "target": "Package",
+              "version": "[2023.3.0, )"
+            },
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[3.2.2, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[3.2.2, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService/ChessGameService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService/ChessGameService.csproj",
+        "projectName": "ChessGameService",
+        "projectPath": "/Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService/ChessGameService.csproj",
+        "packagesPath": "/Users/joakimengqvist/.nuget/packages/",
+        "outputPath": "/Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/joakimengqvist/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.Negotiate": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

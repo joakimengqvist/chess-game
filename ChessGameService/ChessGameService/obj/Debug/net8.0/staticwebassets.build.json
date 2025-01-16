@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "nqSxMHMgpwANrFEHeHYNJadSXG/W6Sska0SMiqTLgaE=",
+  "Source": "ChessGameService",
+  "BasePath": "_content/ChessGameService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
