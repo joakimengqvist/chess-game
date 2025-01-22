@@ -13,7 +13,7 @@ namespace ChessGameService.Controllers;
         {
             try
             {
-                return Content(SerializeChessGameResponse(chessGame), "application/json");
+                return Content(ChessGameSerializer.SerializeChessGameResponse(chessGame), "application/json");
             }
             catch (Exception ex)
             {
@@ -27,7 +27,7 @@ namespace ChessGameService.Controllers;
         {
             try
             {
-                return Content(SerializeHistoryResponse(chessGame), "application/json");
+                return Content(ChessGameSerializer.SerializeHistoryResponse(chessGame), "application/json");
             }
             catch (Exception)
             {
@@ -41,7 +41,7 @@ namespace ChessGameService.Controllers;
             try
             {
                 chessGame.MovePiece(payload.FromCoordinates, payload.ToCoordinates);
-                return Content(SerializeChessGameResponse(chessGame), "application/json");
+                return Content(ChessGameSerializer.SerializeChessGameResponse(chessGame), "application/json");
             }
             catch (InvalidOperationException ex)
             {
@@ -59,7 +59,7 @@ namespace ChessGameService.Controllers;
             try
             {
                 chessGame.ResetGame();
-                return Content(SerializeChessGameResponse(chessGame), "application/json");
+                return Content(ChessGameSerializer.SerializeChessGameResponse(chessGame), "application/json");
             }
             catch (InvalidOperationException ex)
             {
@@ -69,27 +69,5 @@ namespace ChessGameService.Controllers;
             {
                 return StatusCode(500, new { Error = "An unexpected error occurred while processing the move." });
             }
-        }
-
-        private static string SerializeHistoryResponse(ChessGame.ChessGame chessGame)
-        {
-            var history = chessGame.History.ChessHistory.Select(snapshot => snapshot).ToList();
-            
-            return LowercaseJsonSerializer.SerializeObject(new { history });
-        }
-        private static string SerializeChessGameResponse(ChessGame.ChessGame chessGame)
-        {
-            var board = chessGame.Board;
-            var gameStatus = chessGame.Status;
-            var status = new
-            {
-                turnOfColor = gameStatus.TurnOfColor.ToString(),
-                whiteKingCheck = gameStatus.WhiteKingCheck,
-                blackKingCheck = gameStatus.BlackKingCheck,
-                isCheckmate = gameStatus.IsCheckmate,
-                winner = gameStatus.Winner.ToString()
-            };
-            
-            return LowercaseJsonSerializer.SerializeObject(new { board, status });
         }
     }

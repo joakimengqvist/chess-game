@@ -9,20 +9,15 @@ public class ChessGameSerializer : DefaultContractResolver
     {
         ContractResolver = new LowercaseContractResolver()
     };
-
-    public static string SerializeObject(object o)
-    {
-        return JsonConvert.SerializeObject(o, Formatting.Indented, Settings);
-    }
     
-    private static string SerializeHistoryResponse(ChessGame.ChessGame chessGame)
+    public static string SerializeHistoryResponse(ChessGame.ChessGame chessGame)
     {
         var history = chessGame.History.ChessHistory.Select(snapshot => snapshot).ToList();
             
         return SerializeObject(new { history });
     }
     
-    private static string SerializeChessGameResponse(ChessGame.ChessGame chessGame)
+    public static string SerializeChessGameResponse(ChessGame.ChessGame chessGame)
     {
         var board = chessGame.Board;
         var gameStatus = chessGame.Status;
@@ -36,6 +31,11 @@ public class ChessGameSerializer : DefaultContractResolver
         };
             
         return SerializeObject(new { board, status });
+    }
+
+    private static string SerializeObject(object o)
+    {
+        return JsonConvert.SerializeObject(o, Formatting.Indented, Settings);
     }
     
     private class LowercaseContractResolver : DefaultContractResolver

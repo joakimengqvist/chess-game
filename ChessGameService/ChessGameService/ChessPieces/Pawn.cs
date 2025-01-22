@@ -79,9 +79,9 @@ public class Pawn : Piece
     private bool IsWhiteDiagonalMovePossible(int[] fromCoordinates, int[] toCoordinates, Piece targetPiece)
     {
         if (targetPiece.Color == Color) return false;
-        var verticalDiff = fromCoordinates[Y] - toCoordinates[Y];
+        var verticalDiff = Math.Abs(fromCoordinates[Y] - toCoordinates[Y]);
         var verticalDiffDirection = fromCoordinates[Y] > toCoordinates[Y];
-        var horizontalDiff = toCoordinates[X] - fromCoordinates[X];
+        var horizontalDiff = Math.Abs(toCoordinates[X] - fromCoordinates[X]);
         
         var isPossible = verticalDiff == 1 && horizontalDiff == 1 && verticalDiffDirection;
         

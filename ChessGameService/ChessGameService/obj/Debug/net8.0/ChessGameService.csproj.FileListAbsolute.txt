@@ -79,3 +79,4 @@
 /Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService/obj/Debug/net8.0/ChessGameService.genruntimeconfig.cache
 /Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService/obj/Debug/net8.0/ref/ChessGameService.dll
 /Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService/obj/Debug/net8.0/ChessGameService.sourcelink.json

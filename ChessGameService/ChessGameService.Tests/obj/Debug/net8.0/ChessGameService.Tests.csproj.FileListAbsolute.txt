@@ -372,3 +372,4 @@
 /Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService.Tests/obj/Debug/net8.0/ChessGameService.Tests.pdb
 /Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService.Tests/obj/Debug/net8.0/ChessGameService.Tests.genruntimeconfig.cache
 /Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService.Tests/obj/Debug/net8.0/ref/ChessGameService.Tests.dll
+/Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService.Tests/obj/Debug/net8.0/ChessGameService.Tests.sourcelink.json
