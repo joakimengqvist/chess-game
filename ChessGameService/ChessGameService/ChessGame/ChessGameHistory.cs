@@ -8,7 +8,7 @@ public class ChessGameHistory()
 
     public void AddSnapshot(Piece?[,] board, int[] fromCoordinates, int[] toCoordinates)
     {
-        var history = new History(board, fromCoordinates, toCoordinates);
+        var history = new History(ChessHelpers.CloneBoard(board), fromCoordinates, toCoordinates);
         ChessHistory.Add(history);
     }
 }

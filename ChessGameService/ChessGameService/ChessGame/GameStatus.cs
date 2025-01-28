@@ -52,9 +52,6 @@ public class GameStatus(Color turnOfColor)
 
     public void SetCheckmateStatus(Piece?[,] board, Color colorOfTurn)
     {
-        Console.WriteLine("");
-        Console.WriteLine("---------------------------");
-        Console.WriteLine("");
         var isCheckmate = CheckIsCheckmate(board, colorOfTurn);
         if (!isCheckmate) return;
         IsCheckmate = true;

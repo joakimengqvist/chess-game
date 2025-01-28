@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qIxUcLkEVBjWCLsFZRjs8wOIBykObejtshtFcDc9dGqMZyFl+O5dZ6TzA/yKQ0agmOnkr29QLqxbTsupwxrSmQ==",
+  "dgSpecHash": "RXwIW9WLMRNyQGqxp6i9Ep9YG5JPJ0Usez2EABnpP+uEGLvpoIMw+Fu9O3IUcZaMmKvjWOSycMeQQrutixzlEA==",
   "success": true,
   "projectFilePath": "/Users/joakimengqvist/Documents/tech-evolution/code-is-president/chess-game/ChessGameService/ChessGameService.Tests/ChessGameService.Tests.csproj",
   "expectedPackageFiles": [
