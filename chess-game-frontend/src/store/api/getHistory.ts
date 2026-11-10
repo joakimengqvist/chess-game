@@ -1,3 +1,4 @@
+import { API_URL } from './apiUrl';
 // history
 
 import axios from 'axios';
@@ -9,7 +10,7 @@ interface HistoryResponse {
 
 export async function getHistory() : Promise<HistoryResponse> {
   try {
-    const response = await axios.get('http://localhost:5069/api/history');
+    const response = await axios.get(`${API_URL}/api/history`);
     return response.data;
   } catch (error) {
     return {
